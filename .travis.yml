@@ -1,2 +1,10 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: RKM4/esFoQSKvNppbdprOQ65RXVKeXDMNr/NkOiPMdbQXFVHmrwTIMsGg0uAsMONIABMpEoSvZy4TTDeMJAYg1SEdL7H7pd16CvgCFkIU9VQa66O+WjR721JldG/DlByyrotBLsyXl2hbILYm53540uvmu8WidzxXgBisg2anVjKHrQuJBqfJ3DSMpsIcqg/55lsI7hFfc18c7FEL7Ej6zfvOHuUYt/MrMLV96sCZiD9OVHDtFrVbhiKhlSbSjP7xTkCrvTh0Uos2gjrBW7+hZeMPL6JDTpZwCl7sg4mFylwBzfc4CE366KXXdxVmNLIJw/kNIhvWIfNKGSPiLkcsqYQXsxvE+m/adno8HNLbYPyqqHz/l0A2GBKF4ignuWXY93uPN7CztdAaxoKWdABlwXT7NdfJCLaDWAPOVTd6Jpb7mSsaiHquyQSrHLkTGdR0739Yv8L1SnIC/F0WWTdIYI/iR9MmXUcIbdtdgpiZ48OIQK6jgKBYNai5QJLt1QM3hqo6OGEDXcT8QeUcYtc14pGoL84GLCmnRgEUl5uW4EURVYKr5/x5ilP6zTM60Yx1yP6akB3+JyxUPLlmZ5UzspozFF8J43Aouzm5Sf1j+QrhQkcE/5Yo2xIqxpSfUzqB6ulFUOinpoVc8ZR0G+ykX1hOanE9s2bduZ/sOIj7RA=
+  app: whispering-crag-77453
+  on:
+    repo: Stelldevv/node-shopping-list-integration-tests
+    branch: recipe_test
