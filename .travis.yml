@@ -3,7 +3,7 @@ node_js: node
 deploy:
   provider: heroku
   api_key: 
-    secure: fJ9KA6EGgbOkwR38UNhX92OIW16ma64pmyuJJvgeKu9s9jByIFLg09MNbOHeaUr+V5my8EJtzSuJ4i+JG1/ouyv4qsKevUZNOxsBVNUKMIPHriuUaLP+nK8dI+8bLjFlC/6g4G3mApSTUjm7VsViuCHLXF0326utP0aKbiCBkTP5JD0Z9wU3LH4xn4PNQvrXXYwqL0UkSf/WrF5x8QYKvgAZfTe/pKB/NoNXczBFCxCR0TbPdfjs5c8gws6/FLzuJ0+d6XWDYQ2JlDrx+eneR036knnrwBlvUZykz3KdlB80/zQWPghIw1GAAeOmlmIUO1B5Anwrv0wDnmcYLOsM8ofE0h5cKA3yBxB0bRqFK1bJLSmgG6QTBppIjGmCiRW+KqIL8ktujoagTm8aW/JVqDaSE0ALaGo1r7ShpmWGY79/8bl0u2EZWepkoXn09egOv9oa4W4PEgRlKdfslymxg+3eZ7WOos0Nyi0UYO9uKDBUR9z7ZwOu7Iiuhk57hLbyJDvr8TCeE170VVO4Jd9Rt5bM5GLkOmLS5okuJwvV42CGm3NklX0k80PCIF5z4R0XlsS0CDHH6vDX5T91+f9yholW/zFXyBY8Wgwj4L0GKCB41x8fRkUzknf8miwbh5Lj/wZHVpuly0Toge640ab2DjESGY8VV+9KbtrkBFcidjs=
+    secure: 
   app: powerful-waters-74865
   on:
     repo: Stelldevv/node-shopping-list-integration-tests
