@@ -141,28 +141,6 @@ describe('Shopping List', function() {
         expect(res).to.have.status(204);
       });
   });
-});
-
-describe('Recipe List', function() {
-
-  // Before our tests run, we activate the server. Our `runServer`
-  // function returns a promise, and we return the that promise by
-  // doing `return runServer`. If we didn't return a promise here,
-  // there's a possibility of a race condition where our tests start
-  // running before our server has started.
-  before(function() {
-    return runServer();
-  });
-
-  // although we only have one test module at the moment, we'll
-  // close our server at the end of these tests. Otherwise,
-  // if we add another test module that also has a `before` block
-  // that starts our server, it will cause an error because the
-  // server would still be running from the previous tests.
-  after(function() {
-    return closeServer();
-  });
-
   // test strategy:
   //   1. make request to `/shopping-list`
   //   2. inspect response object and prove has right code and have
@@ -186,7 +164,7 @@ describe('Recipe List', function() {
         const expectedKeys = ['id', 'name', 'ingredients'];
         res.body.forEach(function(item) {
           expect(item).to.be.a('object');
-          expect(item).to.include.a('array');
+          expect(item).to.include.keys(expectedKeys);
         });
       });
   });
@@ -246,10 +224,7 @@ describe('Recipe List', function() {
       // prove that the PUT request has right status code
       // and returns updated item
       .then(function(res) {
-        expect(res).to.have.status(200);
-        expect(res).to.be.json;
-        expect(res.body).to.be.a('object');
-        expect(res.body).to.deep.equal(updateData);
+        expect(res).to.have.status(204);
       });
   });
 
@@ -271,4 +246,3 @@ describe('Recipe List', function() {
       });
   });
 });
-
